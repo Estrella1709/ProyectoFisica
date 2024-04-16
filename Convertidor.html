@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="css/convertidora.css">
+    <!-- Bootstrap CSS -->
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Boostrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/36b94ecfc4.js" crossorigin="anonymous"></script>
+    <title>Fisica Para Ingeniería</title>
+  </head>
+<body>
+ <!-- Encabezado -->
+ <header class="container-fluid bg-primary d-flex justify-content-center">
+  <p class="text-light mb-0 p-2 fs-5">Física para Ingeniería</p>
+</header>
+
+<!-- Menú de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <span class="Text-primary fs-5 fw-bold"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="TeoriaFisicaAcustica.html" id="navbarDropdownAcustica" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Acústica
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcustica">
+                      <li><a class="dropdown-item" href="TeoriaFisicaAcustica.html">Teoría</a></li>            
+                      <li><a class="dropdown-item" href="CalculadoraAcustica.html">Calculadora</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="TeoriaOptica.html" id="navbarDropdownOptica" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Óptica
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownOptica">
+                      <li><a class="dropdown-item" href="TeoriaOptica.html">Teoría</a></li>
+                      <li><a class="dropdown-item" href="CalculadoraOptica.html">Calculadora</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="TeoriaFisicaModerna.html" id="navbarDropdownFisicaModerna" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Física Moderna
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownFisicaModerna">
+                      <li><a class="dropdown-item" href="TeoriaFisicaModerna.html">Teoría</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Convertidor.html">Convertidor de Unidades</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+<body>
+    <div class="contenedor">
+        <div class="cuadro">
+            <h1>CONVERTIDOR DE UNIDADES</h1>
+        </div>
+        
+        <div class="seccion">
+            <div class="cuadro">
+                <h2>FRECUENCIA:</h2>
+                <div class="subcuadro">
+                    <h3>De:</h3>
+                    <select name="unidadF1" id="unidadF1" class="selector">
+                        <option value="Herzios">Herzios</option>
+                        <option value="KHerzios">KHerzios</option>
+                        <option value="MHerzios">MHerzios</option>
+                    </select>
+                </div>
+                
+                <div class="subcuadro">
+                    <h3>a:</h3>
+                    <select name="unidadF2" id="unidadF2" class="selector">
+                        <option value="Herzios">Herzios</option>
+                        <option value="KHerzios">KHerzios</option>
+                        <option value="MHerzios">MHerzios</option>
+                    </select>
+                </div>
+                
+                <div class="subcuadro">
+                    <input type="number" id="valorF" placeholder="Valor" class="input">
+                </div>
+                <div class="subcuadro" id="resultadoF"></div>
+            </div>
+        </div>
+        
+        <div class="seccion">
+            <div class="cuadro">
+                <h2>MASA:</h2>
+                <div class="subcuadro">
+                    <h3>De:</h3>
+                    <select name="unidadM1" id="unidadM1" class="selector">
+                        <option value="Nanogramos">Nanogramos</option>
+                        <option value="Microgramos">Microgramos</option>
+                        <option value="Miligramos">Miligramos</option>
+                        <option value="Gramos">Gramos</option>
+                        <option value="Kilogramos">Kilogramos</option>
+                        <option value="Toneladas">Toneladas</option>
+                    </select>
+                </div>
+                
+                <div class="subcuadro">
+                    <h3>a:</h3>
+                    <select name="unidadM2" id="unidadM2" class="selector">
+                        <option value="Nanogramos">Nanogramos</option>
+                        <option value="Microgramos">Microgramos</option>
+                        <option value="Miligramos">Miligramos</option>
+                        <option value="Gramos">Gramos</option>
+                        <option value="Kilogramos">Kilogramos</option>
+                        <option value="Toneladas">Toneladas</option>
+                    </select>
+                </div>
+                
+                <div class="subcuadro">
+                    <input type="number" id="valorM" placeholder="Valor" class="input">
+                </div>
+                <div class="resultadoM" id="resultadoM"></div>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <div class="cuadro">
+                <h2>TIEMPO:</h2>
+                <div class="subcuadro">
+                    <h3>De:</h3>
+                    <select name="unidadT1" id="unidadT1" class="selector">
+                        <option value="Nanosegundos">Nanosegundos</option>
+                        <option value="Microsegundos">Microsegundos</option>
+                        <option value="Milisegundos">Milisegundos</option>
+                        <option value="Segundos">Segundos</option>
+                    </select>
+                </div>
+                
+                <div class="subcuadro">
+                    <h3>a:</h3>
+                    <select name="unidadT2" id="unidadT2" class="selector">
+                        <option value="Nanosegundos">Nanosegundos</option>
+                        <option value="Microsegundos">Microsegundos</option>
+                        <option value="Milisegundos">Milisegundos</option>
+                        <option value="Segundos">Segundos</option>
+                    </select>
+                </div>
+                
+                <div class="subcuadro">
+                    <input type="number" id="valorT" placeholder="Valor" class="input">
+                </div>
+                <div class="resultadoT" id="resultadoT"></div>
+            </div>
+        </div>
+        
+        <div class="seccion">
+            <div class="cuadro">
+                <h2>LONGITUD:</h2>
+                <div class="subcuadro">
+                    <h3>De:</h3>
+                    <select name="unidadL1" id="unidadL1" class="selector">
+                        <option value="Nanometros">Nanometros</option>
+                        <option value="Micrometros">Micrometros</option>
+                        <option value="Milimetros">Milimetros</option>
+                        <option value="Centimetros">Centimetros</option>
+                        <option value="Metros">Metros</option>
+                        <option value="Kilometros">Kilometros</option>
+                    </select>
+                </div>
+                
+                <div class="subcuadro">
+                    <h3>a:</h3>
+                    <select name="unidadL2" id="unidadL2" class="selector">
+                        <option value="Nanometros">Nanometros</option>
+                        <option value="Micrometros">Micrometros</option>
+                        <option value="Milimetros">Milimetros</option>
+                        <option value="Centimetros">Centimetros</option>
+                        <option value="Metros">Metros</option>
+                        <option value="Kilometros">Kilometros</option>
+                    </select>
+                </div>
+                
+                <div class="subcuadro">
+                    <input type="number" id="valorL" placeholder="Valor" class="input">
+                </div>
+                <div class="resultadoL " id="resultadoL"></div>
+            </div>
+        </div>
+        <div class="seccion">
+            <div class="cuadro">
+                <h2>TEMPERATURA:</h2>
+                <div class="subcuadro">
+                    <h3>De:</h3>
+                    <select name="unidadt1" id="unidadt1" class="selector">
+                        <option value="Centigrados">Centigrados</option>
+                        <option value="Farenheit">Farenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+                
+                <div class="subcuadro">
+                    <h3>a:</h3>
+                    <select name="unidadt2" id="unidadt2" class="selector">
+                        <option value="Centigrados">Centigrados</option>
+                        <option value="Farenheit">Farenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+                
+                <div class="subcuadro">
+                    <input type="number" id="valort" placeholder="Valor" class="input">
+                </div>
+                <div class="resultadot " id="resultadot"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="formulario/funcionesC.js"></script>
+</body>
+   <!------------------------------------------------------------>
+   <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+                <h2>#Fisica para Ingenieria</h2>
+        </div>
+        <div class="box">
+          <h2>Creado por: </h2>
+          <p>-Jose Angel Martinez Cabrera-Axel Gabriel Ramirez Ortiz-Estrella Aguillon Torrijos-Alan Ivan Morales Flores-Samuel Veytía López-</p>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>Universidad Politécnica de Querétaro</b> - Todos los Derechos Reservados.</small>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="css/Optica.css">
+    <!-- Bootstrap CSS -->
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Boostrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Calculadora Optica</title>
+</head>
+<body>
+        <!-- Encabezado -->
+ <header class="container-fluid bg-primary d-flex justify-content-center">
+    <p class="text-light mb-0 p-2 fs-5">Física para Ingeniería</p>
+  </header>
+  
+<!-- Menú de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <span class="Text-primary fs-5 fw-bold"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="TeoriaFisicaAcustica.html" id="navbarDropdownAcustica" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Acústica
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcustica">
+                      <li><a class="dropdown-item" href="TeoriaFisicaAcustica.html">Teoría</a></li>            
+                      <li><a class="dropdown-item" href="CalculadoraAcustica.html">Calculadora</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="TeoriaOptica.html" id="navbarDropdownOptica" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Óptica
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownOptica">
+                      <li><a class="dropdown-item" href="TeoriaOptica.html">Teoría</a></li>
+                      <li><a class="dropdown-item" href="CalculadoraOptica.html">Calculadora</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="TeoriaFisicaModerna.html" id="navbarDropdownFisicaModerna" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Física Moderna
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownFisicaModerna">
+                      <li><a class="dropdown-item" href="TeoriaFisicaModerna.html">Teoría</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Convertidor.html">Convertidor de Unidades</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+  <section class="p-5" id="questions">
+    <div class="container py-5">
+      <h2 class="text-center mb-4">Esta calculadora resuelve estos problemas</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                1.- Angulo de incidencia
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                    <h3>1.- Angulo de incidencia</h3> 
+                    <div class="calculator">
+                      <img src="img/formulasFO/formula1.png">  
+                      <label for="numero">Ingresa el índice de refracción del primer medio (adimensional): </label> 
+                      <input type="number" step="0.01" id="IndiceRefraccion1" name="IndiceRefraccion1"> 
+                      <label for="numero">Ingresa el índice de refracción del segundo medio (adimensional): </label> 
+                      <input type="number" step="0.01" id="IndiceRefraccion2" name="IndiceRefraccion2"> 
+                      <label for="numero">Ingresa el ángulo de refraccion en radianes: :  </label> 
+                      <input type="number" step="0.01" id="AnguloRefraccion" name="AnguloRefraccion"> 
+                      <button id="cAI">Calcular</button> 
+                      <input type="text" step="0.01" id="resultadoAI" name="resultadoAI" placeholder="Resultado" readonly> 
+                    </div> 
+                    <script src="formulario/fisicaO/formula1.js"></script>
+                  </section>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                2.- Angulo de refracción
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                    <h3>2.- Angulo de refracción</h3> 
+                    <div class="calculator">
+                      <img src="img/formulasFO/formula2.png">   
+                      <label for="numero">Ingresa el índice de refracción del primer medio (adimensional): </label> 
+                      <input type="number" step="0.01" id="IndiceRefraccion1R" name="IndiceRefraccion1R"> 
+                      <label for="numero">Ingresa el índice de refracción del segundo medio (adimensional): </label> 
+                      <input type="number" step="0.01" id="IndiceRefraccion2R" name="IndiceRefraccion2R"> 
+                      <label for="numero">Ingresa el ángulo de incidencia en radianes:  </label> 
+                      <input type="number" step="0.01" id="AnguloIncidenciaR" name="AnguloIncidenciaR"> 
+                      <button id="cAIR">Calcular</button> 
+                      <input type="text" step="0.01" id="resultadoAR" name="resultadoAR" placeholder="Resultado" readonly> 
+                    </div> 
+                    <script src="formulario/fisicaO/formula2.js"></script>
+                  </section>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              3.- Índice de refracción del primer medio
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>3.-Índice de refracción del primer medio</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula3.png">   
+                    <label for="numero">Ingresa el índice de refracción del segundo medio (adimensional):</label> 
+                    <input type="number" step="0.01" id="IndiceRefraccionI1" name="IndiceRefraccionI1"> 
+                    <label for="numero">Ingresa el ángulo de incidencia en radianes: </label> 
+                    <input type="number" step="0.01" id="AnguloIncidenciaI1" name="AnguloIncidenciaI1"> 
+                    <label for="numero">Ingresa el ángulo de refracción en radianes:  </label> 
+                    <input type="number" step="0.01" id="AnguloRefraccionI1" name="AnguloRefraccionI1"> 
+                    <button id="cIR">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoIR" name="resultadoIR" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula3.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              4.- Índice de refracción del segundo medio
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>4.- Índice de refracción del segundo medio</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula4.png">   
+                    <label for="numero">Ingresa el índice de refracción del primer medio (adimensional): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccionSM" name="IndiceRefraccionSM"> 
+                    <label for="numero">Ingresa el ángulo de incidencia en radianes: </label> 
+                    <input type="number" step="0.01" id="AnguloIncidenciaSM" name="AnguloIncidenciaSM"> 
+                    <label for="numero">Ingresa el ángulo de refracción en radianes:  </label> 
+                    <input type="number" step="0.01" id="AnguloRefraccionSM" name="AnguloRefraccionSM"> 
+                    <button id="cSM">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoSM" name="resultadoSM" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula4.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              5.- Velocidad de fase
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>5.- Velocidad de fase</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula5.png">    
+                    <label for="numero">Ingresa la velocidad de la luz en el medio (m/s): </label> 
+                    <input type="number" step="0.01" id="VelocidadLuzVF" name="VelocidadLuzVF"> 
+                    <label for="numero">Ingresa el índice de refracción del medio (adimensional): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccionVF" name="IndiceRefraccionVF"> 
+                    <button id="cVF">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoVF" name="resultadoVF" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula5.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              6.- Velocidad de fase (segunda opción)
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>6.- Velocidad de fase (segunda opción)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula6.png">    
+                    <label for="numero">Ingresa el índice de refracción del medio (adimensional): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccionVF2" name="IndiceRefraccionVF2"> 
+                    <label for="numero">Ingresa la velocidad de la luz en el medio (m/s): </label> 
+                    <input type="number" step="0.01" id="VelocidadLuzVF2" name="VelocidadLuzVF2"> 
+                    <button id="cVF2">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoVF2" name="resultadoVF2" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula6.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              7.- Velocidad de la luz (con índice de refraccion)
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>7.- Velocidad de la luz</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula7.png">    
+                    <label for="numero">Ingresa la velocidad de fase en el medio (m/s): </label> 
+                    <input type="number" step="0.01" id="VelocidadFaseVL" name="VelocidadFaseVL"> 
+                    <label for="numero">Ingresa el índice de refracción del medio (adimensional): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccionVL" name="IndiceRefraccionVL"> 
+                    <button id="cVL">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoVL" name="resultadoVL" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula7.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              8.- Velocidad de fase (tercera opción)
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>8.- Velocidad de fase (tercera opción)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula8.png">    
+                    <label for="numero">Ingresa la longitud de onda (metros): </label> 
+                    <input type="number" step="0.01" id="LongitudOndaVF" name="LongitudOndaVF"> 
+                    <label for="numero">Ingresa el tiempo (segundos): </label> 
+                    <input type="number" step="0.01" id="TiempoVF" name="TiempoVF"> 
+                    <button id="cVF3">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoVF3" name="resultadoVF3" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula8.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              9.- Longitud de onda
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>9.- Longitud de Onda</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula9.png">    
+                    <label for="numero">Ingresa la velocidad de fase (m/s): </label> 
+                    <input type="number" step="0.01" id="VelocidadFaseLO" name="VelocidadFaseLO"> 
+                    <label for="numero">Ingresa el tiempo (segundos): </label> 
+                    <input type="number" step="0.01" id="TiempoLO" name="TiempoLO"> 
+                    <button id="cLO">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoLO" name="resultadoLO" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula9.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              10.- Velocidad de la luz en un medio
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>10.- Velocidad de la luz en un medio</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula10.png">  
+                    <label for="numero">Ingresa el índice de refracción del medio (adimensional): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccionVLM" name="IndiceRefraccionVLM"> 
+                    <label for="numero">Ingresa la velocidad de fase en el medio (m/s): </label> 
+                    <input type="number" step="0.01" id="VelocidadFaseVLM" name="VelocidadFaseVLM"> 
+                    <button id="cVLM">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoVLM" name="resultadoVLM" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula10.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+              11.- Difraccion (distancia entre aperturas)
+            </button>
+          </h2>
+          <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>11.- Difraccion (distancia entre aperturas)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula11.png">  
+                    <label for="numero">Ingresa el Ángulo de difracción (radianes): </label> 
+                    <input type="number" step="0.01" id="AnguloDifraccionDA" name="AnguloDifraccionDA"> 
+                    <label for="numero">Ingresa el Orden del Máximo: </label> 
+                    <input type="number" step="0.01" id="OrdenMaximoDA" name="OrdenMaximoDA"> 
+                    <label for="numero">Ingresa la Longitud de onda (metros): </label> 
+                    <input type="number" step="0.01" id="LongitudOndaDA" name="LongitudOndaDA">
+                    <button id="cDA">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoDA" name="resultadoDA" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula11.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+              12.- Difraccion (Orden del máximo)
+            </button>
+          </h2>
+          <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>12.- Difraccion (Orden del máximo)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula12.png">  
+                    <label for="numero">Ingresa el Ángulo de difracción en radianes (anguloDifraccion): </label> 
+                    <input type="number" step="0.01" id="AnguloDifraccionDO" name="AnguloDifraccionDO"> 
+                    <label for="numero">Ingresa la Distancia entre las aperturas en metros (distanciaAperturas): </label> 
+                    <input type="number" step="0.01" id="DistanciaAperturasDO" name="DistanciaAperturasDO"> 
+                    <label for="numero">Ingresa la Longitud de onda en metros (longitudOnda): </label> 
+                    <input type="number" step="0.01" id="LongitudOndaDO" name="LongitudOndaDO">
+                    <button id="cDO">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoDO" name="resultadoDO" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula12.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirteen" aria-expanded="false" aria-controls="collapsethirteen">
+              13.- Difraccion (Longitud de onda)
+            </button>
+          </h2>
+          <div id="collapsethirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>13.- Difraccion (Longitud de onda)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula13.png">  
+                    <label for="numero">Ingresa el Ángulo de difracción en radianes (anguloDifraccion): </label> 
+                    <input type="number" step="0.01" id="AnguloDifraccionDL" name="AnguloDifraccionDL"> 
+                    <label for="numero">Ingresa el Orden del Máximo (ordenMaximo): </label> 
+                    <input type="number" step="0.01" id="OrdenMaximoDL" name="OrdenMaximoDL"> 
+                    <label for="numero">Ingresa la Distancia entre las aperturas en metros (distanciaAperturas): </label> 
+                    <input type="number" step="0.01" id="DistanciaAperturasDL" name="DistanciaAperturasDL">
+                    <button id="cDL">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoDL" name="resultadoDL" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula13.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+              14.- Ángulo de difracción
+            </button>
+          </h2>
+          <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>14.- Ángulo de difracción</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula14.png">  
+                    <label for="numero">Ingresa el Orden del Máximo (ordenMaximo): </label> 
+                    <input type="number" step="0.01" id="OrdenMaximoAD" name="OrdenMaximoAD"> 
+                    <label for="numero">Ingresa la Distancia entre las aperturas en metros (distanciaAperturas): </label> 
+                    <input type="number" step="0.01" id="DistanciaAperturasAD" name="DistanciaAperturasAD"> 
+                    <label for="numero">Ingresa la Longitud de onda en metros (longitudOnda): </label> 
+                    <input type="number" step="0.01" id="LongitudOndaAD" name="LongitudOndaAD">
+                    <button id="cAD">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoAD" name="resultadoAD" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula14.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefifteen" aria-expanded="false" aria-controls="collapsefifteen">
+              15.- Distancia Focal (lente delgada)
+            </button>
+          </h2>
+          <div id="collapsefifteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>15.- Distancia Focal (lente delgada)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula15.png">  
+                    <label for="numero">Ingresa la distancia objeto en metros (distanciaObjeto): </label> 
+                    <input type="number" step="0.01" id="DistanciaObjetoDF" name="DistanciaObjetoDF"> 
+                    <label for="numero">Ingresa la distancia imagen en metros (distanciaImagen): </label> 
+                    <input type="number" step="0.01" id="DistanciaImagenDF" name="DistanciaImagenDF"> 
+                    <button id="cDF">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoDF" name="resultadoDF" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula15.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesixteen" aria-expanded="false" aria-controls="collapsesixteen">
+              16.- Distancia de un objeto (lente delgada)
+            </button>
+          </h2>
+          <div id="collapsesixteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>16.- Distancia de un objeto (lente delgada)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula16.png">  
+                    <label for="numero">Ingresa la distancia focal en metros (distanciaFocal): </label> 
+                    <input type="number" step="0.01" id="DistanciaFocalDLO" name="DistanciaFocalDLO"> 
+                    <label for="numero">Ingresa la distancia imagen en metros (distanciaImagen): </label> 
+                    <input type="number" step="0.01" id="DistanciaImagenDLO" name="DistanciaImagenDLO"> 
+                    <button id="cDLO">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoDLO" name="resultadoDLO" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula16.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseventeen" aria-expanded="false" aria-controls="collapseseventeen">
+              17.- Distancia de imagen (lente delgada)
+            </button>
+          </h2>
+          <div id="collapseseventeen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>17.- Distancia de imagen (lente delgada)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula17.png">  
+                    <label for="numero">Ingresa la distancia focal en metros (distanciaFocal): </label> 
+                    <input type="number" step="0.01" id="DistanciaFocalDLI" name="DistanciaFocalDLI"> 
+                    <label for="numero">Ingresa la distancia objeto en metros (distanciaObjeto): </label> 
+                    <input type="number" step="0.01" id="DistanciaObjetoDLI" name="DistanciaObjetoDLI"> 
+                    <button id="cDLI">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoDLI" name="resultadoDLI" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula17.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeightteen" aria-expanded="false" aria-controls="collapseeightteen">
+              18.- Ángulo Crítico (indice de refraccion 1)
+            </button>
+          </h2>
+          <div id="collapseeightteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>18.- Ángulo Crítico (indice de refraccion 1)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula18.png">  
+                    <label for="numero">Ingresa el ángulo crítico en radianes (anguloCritico): </label> 
+                    <input type="number" step="0.01" id="AnguloCriticoACI" name="AnguloCriticoACI"> 
+                    <label for="numero">Ingresa el índice de refracción 2 (indiceRefraccion2): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccion2ACI" name="IndiceRefraccion2ACI"> 
+                    <button id="cACI">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoACI" name="resultadoACI" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula18.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenineteen" aria-expanded="false" aria-controls="collapsenineteen">
+              19.- Ángulo Crítico (indice de refraccion 2)
+            </button>
+          </h2>
+          <div id="collapsenineteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>19.- Ángulo Crítico (indice de refraccion 2)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula19.png">  
+                    <label for="numero">Ingresa el ángulo crítico en radianes (anguloCritico): </label> 
+                    <input type="number" step="0.01" id="AnguloCriticoACI2" name="AnguloCriticoACI2"> 
+                    <label for="numero">Ingresa el índice de refracción 1 (indiceRefraccion1): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccion1ACI2" name="IndiceRefraccion1ACI2"> 
+                    <button id="cACI2">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoACI2" name="resultadoACI2" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula19.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwenty" aria-expanded="false" aria-controls="collapsetwenty">
+              20.- Ángulo Crítico 
+            </button>
+          </h2>
+          <div id="collapsetwenty" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>20.- Ángulo Crítico</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula20.png">  
+                    <label for="numero">Ingresa el índice de refracción 1 (indiceRefraccion1): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccion1AC1" name="IndiceRefraccion1AC1"> 
+                    <label for="numero">Ingresa el índice de refracción 2 (indiceRefraccion2): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccion2AC1" name="IndiceRefraccion2AC1"> 
+                    <button id="cAC1">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoAC1" name="resultadoAC1" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula20.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwentyone" aria-expanded="false" aria-controls="collapsetwentyone">
+              21.- Ángulo de Brewster (índice de refracción 1)
+            </button>
+          </h2>
+          <div id="collapsetwentyone" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>21.- Ángulo de Brewster (índice de refracción 1)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula21.png">  
+                    <label for="numero">Ingresa el ángulo de Brewster en radianes (anguloBrewster): </label> 
+                    <input type="number" step="0.01" id="AnguloBrewster" name="AnguloBrewster"> 
+                    <label for="numero">Ingresa el índice de refracción 2 (indiceRefraccion2): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccion2AB" name="IndiceRefraccion2AB"> 
+                    <button id="cAB">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoAB" name="resultadoAB" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula21.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwentytwo" aria-expanded="false" aria-controls="collapsetwentytwo">
+              22.- Ángulo de Brewster (índice de refracción 2)
+            </button>
+          </h2>
+          <div id="collapsetwentytwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>22.- Ángulo de Brewster (índice de refracción 2)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula22.png">  
+                    <label for="numero">Ingresa el ángulo de Brewster en radianes (anguloBrewster): </label> 
+                    <input type="number" step="0.01" id="AnguloBrewster2" name="AnguloBrewster2"> 
+                    <label for="numero">Ingresa el índice de refracción 1 (indiceRefraccion1): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccion1AB2" name="IndiceRefraccion1AB2"> 
+                    <button id="cAB2">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoAB2" name="resultadoAB2" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula22.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwentythree" aria-expanded="false" aria-controls="collapsetwentythree">
+              23.- Ángulo de Brewster
+            </button>
+          </h2>
+          <div id="collapsetwentythree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>23.- Ángulo de Brewster</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula23.png">  
+                    <label for="numero">Ingresa el índice de refracción 1 (indiceRefraccion1): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccion1ABO" name="IndiceRefraccion1ABO"> 
+                    <label for="numero">Ingresa el índice de refracción 2 (indiceRefraccion2): </label> 
+                    <input type="number" step="0.01" id="IndiceRefraccion2ABO" name="IndiceRefraccion2ABO"> 
+                    <button id="cABO">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoABO" name="resultadoABO" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula23.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwentyfour" aria-expanded="false" aria-controls="collapsetwentyfour">
+              24.- Amplificación del telescopio (distancia focal del objetivo)
+            </button>
+          </h2>
+          <div id="collapsetwentyfour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>24.- Amplificación del telescopio (distancia focal del objetivo)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula24.png">  
+                    <label for="numero">Ingresa la amplificación del telescopio (adimensional): </label> 
+                    <input type="number" step="0.01" id="AmplificacionATF" name="AmplificacionATF"> 
+                    <label for="numero">Ingresa la distancia focal del ocular en metros (fOcular): </label> 
+                    <input type="number" step="0.01" id="FOcularATF" name="FOcularATF"> 
+                    <button id="cATF">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoATF" name="resultadoATF" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula24.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwentyfive" aria-expanded="false" aria-controls="collapsetwentyfive">
+              25.- Amplificación del telescopio (distancia focal del ocular)
+            </button>
+          </h2>
+          <div id="collapsetwentyfive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>25.- Amplificación del telescopio (distancia focal del ocular)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula25.png">  
+                    <label for="numero">Ingresa la distancia focal del objetivo en metros (fObjeto): </label> 
+                    <input type="number" step="0.01" id="FObjetoATO" name="FObjetoATO"> 
+                    <label for="numero">Ingresa la amplificación del telescopio (adimensional): </label> 
+                    <input type="number" step="0.01" id="AmplificacionATO" name="AmplificacionATO"> 
+                    <button id="cATO">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoATO" name="resultadoATO" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula25.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwentysix" aria-expanded="false" aria-controls="collapsetwentysix">
+              26.- Amplificación del telescopio
+            </button>
+          </h2>
+          <div id="collapsetwentysix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>26.- Amplificación del telescopio</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula26.png">  
+                    <label for="numero">Ingresa la distancia focal del objetivo en metros (fObjeto): </label> 
+                    <input type="number" step="0.01" id="FObjetoAT" name="FObjetoAT"> 
+                    <label for="numero">Ingresa la distancia focal del ocular en metros (fOcular): </label> 
+                    <input type="number" step="0.01" id="FOcularAT" name="FOcularAT"> 
+                    <button id="cAT">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoAT" name="resultadoAT" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula26.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwentyseven" aria-expanded="false" aria-controls="collapsetwentyseven">
+              27.- Aumento (Magnificación) Imagen
+            </button>
+          </h2>
+          <div id="collapsetwentyseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>27.- Aumento (Magnificación) Imagen</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula27.png">  
+                    <label for="numero">Ingresa el Tamaño de la imagen: </label> 
+                    <input type="number" step="0.01" id="TamañoImagenAMI" name="TamañoImagenAMI"> 
+                    <label for="numero">Ingresa el Tamaño del objeto: </label> 
+                    <input type="number" step="0.01" id="TamañoObjetoAMI" name="TamañoObjetoAMI"> 
+                    <button id="cAMI">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoAMI" name="resultadoAMI" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula27.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwentyeight" aria-expanded="false" aria-controls="collapsetwentyeight">
+              28.- Aumento (Magnificación) de la imagen, tamaño de la imagen (d1)
+            </button>
+          </h2>
+          <div id="collapsetwentyeight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>28.- Aumento (Magnificación) de la imagen, tamaño de la imagen</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula28.png"> 
+                    <label for="numero">Ingresa el Tamaño del objeto (metros): </label> 
+                    <input type="number" step="0.01" id="TamañoObjetoAMT" name="TamañoObjetoAMT"> 
+                    <label for="numero">Ingresa el Aumento de la imagen: </label> 
+                    <input type="number" step="0.01" id="AumentoAMT" name="AumentoAMT"> 
+                    <button id="cAMT">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoAMT" name="resultadoAMT" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula28.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwentynine" aria-expanded="false" aria-controls="collapsetwentynine">
+              29.- Aumento (Magnificación) de la imagen, tamaño del objeto d0
+            </button>
+          </h2>
+          <div id="collapsetwentynine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>29.- Aumento (Magnificación) de la imagen, tamaño del objeto d0</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula29.png">  
+                    <label for="numero">Ingresa el Tamaño de la imagen (metros): </label> 
+                    <input type="number" step="0.01" id="TamañoImagenAMTO" name="TamañoImagenAMTO"> 
+                    <label for="numero">Ingresa el Aumento de la imagen: </label> 
+                    <input type="number" step="0.01" id="AumentoAMTO" name="AumentoAMTO"> 
+                    <button id="cAMTO">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoAMTO" name="resultadoAMTO" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula29.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirty" aria-expanded="false" aria-controls="collapsethirty">
+              30.- Velocidad Ángular de la luz (Periodo)
+            </button>
+          </h2>
+          <div id="collapsethirty" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>30.- Velocidad Ángular de la luz (Periodo)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula30.png">  
+                    <label for="numero">Ingresa la frecuencia (Hz): </label> 
+                    <input type="number" step="0.01" id="VelocidadAngularaVA" name="VelocidadAngularaVA"> 
+                    <button id="caVA">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoaVA" name="resultadoaVA" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula30.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirtyone" aria-expanded="false" aria-controls="collapsethirtyone">
+              31.- Velocidad Ángular de la luz 
+            </button>
+          </h2>
+          <div id="collapsethirtyone" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>31.- Velocidad Ángular de la luz</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula31.png"> 
+                    <label for="numero">Ingresa el período (segundos): </label> 
+                    <input type="number" step="0.01" id="PeriodoVAF" name="PeriodoVAF"> 
+                    <button id="cVAF">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoVAF" name="resultadoVAF" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula31.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirtythree" aria-expanded="false" aria-controls="collapsethirtythree">
+              32.- Frecuencia del laser
+            </button>
+          </h2>
+          <div id="collapsethirtythree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>32.- Frecuencia del laser</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula32.png">  
+                    <label for="numero">Ingresa la velocidad de la luz en el medio (m/s): </label> 
+                    <input type="number" step="0.01" id="VelocidadLuzFA" name="VelocidadLuzFA"> 
+                    <label for="numero">Ingresa la longitud de onda del láser (metros): </label> 
+                    <input type="number" step="0.01" id="LongitudOndaFA" name="LongitudOndaFA"> 
+                    <button id="cFA">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoFA" name="resultadoFA" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula33.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirtyfour" aria-expanded="false" aria-controls="collapsethirtyfour">
+              33.- Frecuencia del laser (Velocidad de la luz)
+            </button>
+          </h2>
+          <div id="collapsethirtyfour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>33.- Frecuencia del laser (Velocidad de la luz)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula33.png">  
+                    <label for="numero">Ingresa la Longitud de Onda (metros): </label> 
+                    <input type="number" step="0.01" id="LongitudOndaFVL" name="LongitudOndaFVL"> 
+                    <label for="numero">Ingresa la Frecuencia (Hz): </label> 
+                    <input type="number" step="0.01" id="FrecuenciaFVL" name="FrecuenciaFVL"> 
+                    <button id="cFVL">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoFVL" name="resultadoFVL" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula34.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirtyfive" aria-expanded="false" aria-controls="collapsethirtyfive">
+              34.- Frecuencia del laser (Longitud de onda)
+            </button>
+          </h2>
+          <div id="collapsethirtyfive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>34.- Frecuencia del laser (Longitud de onda)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula34.png">  
+                    <label for="numero">Ingresa la Velocidad de la luz en el medio (m/s): </label> 
+                    <input type="number" step="0.01" id="VelocidadLuzLVL" name="VelocidadLuzLVL"> 
+                    <label for="numero">Ingresa la Frecuencia (Hz): </label> 
+                    <input type="number" step="0.01" id="FrecuenciaLVL" name="FrecuenciaLVL"> 
+                    <button id="cLVL">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoLVL" name="resultadoLVL" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula35.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirtysix" aria-expanded="false" aria-controls="collapsethirtysix">
+              35.- Diferencia entre máximos de interferencia (distancia entre las rendijas (d))
+            </button>
+          </h2>
+          <div id="collapsethirtysix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>35.- Diferencia entre máximos de interferencia (distancia entre las rendijas (d))</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula35.png">  
+                    <label for="numero">Ingresa la longitud de onda de la luz (metros): </label> 
+                    <input type="number" step="0.01" id="LongitudOndaDIR" name="LongitudOndaDIR"> 
+                    <label for="numero">Ingresa la distancia desde las rendijas hasta la pantalla (metros): </label> 
+                    <input type="number" step="0.01" id="DistanciaPantallaDIR" name="DistanciaPantallaDIR"> 
+                    <label for="numero">Ingresa la separación entre dos máximos de interferencia consecutivos en la pantalla (metros): </label> 
+                    <input type="number" step="0.01" id="SeparacionMaximosDIR" name="SeparacionMaximosDIR"> 
+                    <button id="cDIR">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoDIR" name="resultadoDIR" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula36.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirtyseven" aria-expanded="false" aria-controls="collapsethirtyseven">
+              36.- Diferencia entre máximos de interferencia (distancia desde las rendijas hasta la pantalla (L))
+            </button>
+          </h2>
+          <div id="collapsethirtyseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>36.- Diferencia entre máximos de interferencia (distancia desde las rendijas hasta la pantalla (L))</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula36.png">  
+                    <label for="numero">Ingresa la longitud de onda de la luz (metros): </label> 
+                    <input type="number" step="0.01" id="LongitudOndaDRP" name="LongitudOndaDRP"> 
+                    <label for="numero">Ingresa la distancia entre las rendijas (metros): </label> 
+                    <input type="number" step="0.01" id="DistanciaRendijasDRP" name="DistanciaRendijasDRP"> 
+                    <label for="numero">Ingresa la separación entre dos máximos de interferencia consecutivos en la pantalla (metros): </label> 
+                    <input type="number" step="0.01" id="SeparacionMaximosDRP" name="SeparacionMaximosDRP"> 
+                    <button id="cDRP">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoDRP" name="resultadoDRP" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula37.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirtyeight" aria-expanded="false" aria-controls="collapsethirtyeight">
+              37.- Diferencia entre máximos de interferencia (longitud de onda (lambda))
+            </button>
+          </h2>
+          <div id="collapsethirtyeight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>37.- Diferencia entre máximos de interferencia (longitud de onda (lambda))</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula37.png"> 
+                    <label for="numero">Ingresa la distancia entre las rendijas (metros): </label> 
+                    <input type="number" step="0.01" id="DistanciaRendijasDIL" name="DistanciaRendijasDIL"> 
+                    <label for="numero">Ingresa la distancia desde las rendijas hasta la pantalla (metros): </label> 
+                    <input type="number" step="0.01" id="DistanciaPantallaDIL" name="DistanciaPantallaDIL"> 
+                    <label for="numero">Ingresa la separación entre dos máximos de interferencia consecutivos en la pantalla (metros): </label> 
+                    <input type="number" step="0.01" id="SeparacionMaximosDIL" name="SeparacionMaximosDIL"> 
+                    <button id="cDIL">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoDIL" name="resultadoDIL" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula38.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirtynine" aria-expanded="false" aria-controls="collapsethirtynine">
+              38.- Diferencia entre máximos de interferencia (separación entre dos máximos de interferencia consecutivos en la pantalla)
+            </button>
+          </h2>
+          <div id="collapsethirtynine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>38.- Diferencia entre máximos de interferencia (separación entre dos máximos de interferencia consecutivos en la pantalla)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula38.png">  
+                    <label for="numero">Ingresa la distancia entre las rendijas (metros): </label> 
+                    <input type="number" step="0.01" id="DistanciaRendijasDIM" name="DistanciaRendijasDIM"> 
+                    <label for="numero">Ingresa la distancia desde las rendijas hasta la pantalla (metros): </label> 
+                    <input type="number" step="0.01" id="DistanciaPantallaDIM" name="DistanciaPantallaDIM"> 
+                    <label for="numero">Ingresa la longitud de onda de la luz (metros): </label> 
+                    <input type="number" step="0.01" id="LongitudOndaDIM" name="LongitudOndaDIM"> 
+                    <button id="cDIM">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoDIM" name="resultadoDIM" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula39.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefourty" aria-expanded="false" aria-controls="collapsefourty">
+              39.- Intensidad de la luz (Potencia)
+            </button>
+          </h2>
+          <div id="collapsefourty" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>39.- Intensidad de la luz (Potencia)</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula39.png">  
+                    <label for="numero">Ingresa la intensidad de la luz: </label> 
+                    <input type="number" step="0.01" id="IntensidadLuzILP" name="IntensidadLuzILP"> 
+                    <label for="numero">Ingresa el área de la superficie: </label> 
+                    <input type="number" step="0.01" id="AreaILP" name="AreaILP"> 
+                    <button id="cILP">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoILP" name="resultadoILP" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula40.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefourtyone" aria-expanded="false" aria-controls="collapsefourtyone">
+              40.- Intensidad de la luz (área (a))
+            </button>
+          </h2>
+          <div id="collapsefourtyone" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>40.- Intensidad de la luz (área (a))</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula40.png">  
+                    <label for="numero">Ingresa la intensidad de la luz: </label> 
+                    <input type="number" step="0.01" id="IntensidadLuzILA" name="IntensidadLuzILA"> 
+                    <label for="numero">Ingresa la potencia: </label> 
+                    <input type="number" step="0.01" id="PotenciaILA" name="PotenciaILA"> 
+                    <button id="cILA">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoILA" name="resultadoILA" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula41.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefourtytwo" aria-expanded="false" aria-controls="collapsefourtytwo">
+              41.- Intensidad de la luz
+            </button>
+          </h2>
+          <div id="collapsefourtytwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <section class="ejercicios">
+                <section class="ejercicio"> 
+                  <h3>41.- Intensidad de la luz</h3> 
+                  <div class="calculator">
+                    <img src="img/formulasFO/formula41.png">  
+                    <label for="numero">Ingresa la potencia: </label> 
+                    <input type="number" step="0.01" id="PotenciaIL" name="PotenciaIL"> 
+                    <label for="numero">Ingresa el área de la superficie: </label> 
+                    <input type="number" step="0.01" id="AreaIL" name="AreaIL"> 
+                    <button id="cIL">Calcular</button> 
+                    <input type="text" step="0.01" id="resultadoIL" name="resultadoIL" placeholder="Resultado" readonly> 
+                  </div> 
+                  <script src="formulario/fisicaO/formula42.js"></script>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefourtytwo" aria-expanded="false" aria-controls="collapsefourtytwo">
+            </button>
+          </h2>
+          <div id="collapsefourtytwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  
+    <!------------------------------------------------------------>
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+          <div class="box">
+                  <h2>#Fisica para Ingenieria</h2>
+          </div>
+          <div class="box">
+            <h2>Creado por: </h2>
+            <p>-Jose Angel Martinez Cabrera-Axel Gabriel Ramirez Ortiz-Estrella Aguillon Torrijos-Alan Ivan Morales Flores-Samuel Veytía López-</p>
+          </div>
+      </div>
+      <div class="grupo-2">
+          <small>&copy; 2024 <b>Universidad Politécnica de Querétaro</b> - Todos los Derechos Reservados.</small>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="css/Acustica.css">
+    <!-- Bootstrap CSS -->
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Boostrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/36b94ecfc4.js" crossorigin="anonymous"></script>
+    <title>Fisica Para Ingeniería</title>
+  </head>
+<body>
+ <!-- Encabezado -->
+ <header class="container-fluid bg-primary d-flex justify-content-center">
+  <p class="text-light mb-0 p-2 fs-5">Física para Ingeniería</p>
+</header>
+
+<!-- Menú de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <span class="Text-primary fs-5 fw-bold"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="TeoriaFisicaAcustica.html" id="navbarDropdownAcustica" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Acústica
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownAcustica">
+                      <li><a class="dropdown-item" href="TeoriaFisicaAcustica.html">Teoría</a></li>            
+                      <li><a class="dropdown-item" href="CalculadoraAcustica.html">Calculadora</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="TeoriaOptica.html" id="navbarDropdownOptica" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Óptica
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownOptica">
+                      <li><a class="dropdown-item" href="TeoriaOptica.html">Teoría</a></li>
+                      <li><a class="dropdown-item" href="CalculadoraOptica.html">Calculadora</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="TeoriaFisicaModerna.html" id="navbarDropdownFisicaModerna" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Física Moderna
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownFisicaModerna">
+                      <li><a class="dropdown-item" href="TeoriaFisicaModerna.html">Teoría</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Convertidor.html">Convertidor de Unidades</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+    <!------------------------------------------------------------>
+    <section class="bg-dark text-light p-5 text-center text-sm-start" id ="home">
+      <div class="container py-5">
+        <div class="d-sm-flex align-items-center justify-content-between py-5">
+          <div>
+            <h1>Teoría Acústica</h1>
+            <h3 class="my-4">Definición</h3>
+            <p class="lead my-4"> La acústica es la ciencia que estudia los diversos aspectos relativos al sonido,
+              particularmente los fenómenos de generación, propagación y recepción de las ondas
+              sonoras en diversos medios, así como su transducción, su percepción y sus variadas
+              aplicaciones tecnológicas. La acústica tiene un carácter fuertemente multidisciplinario,
+              abarcando cuestiones que van desde la física pura hasta la biología y las ciencias sociales</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------>
+    
+    <section class="p-5" id="questions">
+      <div class="container py-5">
+        <h2 class="text-center mb-4">TEMAS DE ACUSTICA</h2>
+        <div class="accordion" id="accordionExample">
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                1.- Historia acústica 
+              </button>
+            </h2>
+            <div id="collapseone" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  Historia acústica 
+                </h3>
+                <p class="card-text mb-3"> 
+                  <p>
+                    En nuestro medio, la acústica es uno de los campos menos valorados de la física y de la ciencia en general. La acústica es la ciencia que estudia los diversos aspectos relativos al sonido, particularmente los fenómenos de generación, propagación y recepción de las ondas sonoras en diversos medios, así como su transducción, su percepción y sus variadas aplicaciones tecnológicas. La acústica tiene un carácter fuertemente multidisciplinario, abarcando cuestiones que van desde la física pura hasta la biología y las ciencias sociales.
+                  </p>
+                 
+                  <p>
+                    La acústica, que comenzó con los experimentos de Pitágoras en la antigua Grecia, ha evolucionado a lo largo de los siglos para convertirse en una ciencia integral que se aplica en campos como la música, la arquitectura, la ingeniería de sonido y la medicina. Desde los patrones de vibración sonora de Ernst Chladni en el siglo XVIII hasta las técnicas avanzadas de hoy en la actualidad. 
+                  </p>
+                  <p>
+                    Jaramillo, A. M. J. (2007). Acústica: la ciencia del sonido. Itm.
+                  </p>
+                  
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                2.- Conceptos Básicos 
+              </button>
+            </h2>
+            <div id="collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  Conceptos Básicos 
+                </h3>
+                <p class="card-text mb-3"> 
+                  <p>
+                    1.1	sonido es una alteración de la presión atmosférica que se produce por las oscilaciones de partículas a través de estas partículas se transmite longitudinalmente la onda sonora.
+                  </p>
+                  <p>
+                    1.2	Ruido auditivamente estamos acostumbrados a llamar ruido a sonidos que no son agradables pero la definición más acertada de acústica es un sonido no deseado.
+                  </p>
+                  <p>
+                    1.3	Longitud de onda: es la longitud de un ciclo complejo de la onda.
+                  </p>
+                  <p>
+                    1.4	Periodo: es la duración en segundos de un ciclo completo de la onda.
+                  </p>
+                  <p>
+                    1.5	Frecuencia: es el numero de ciclos u oscilaciones que se repiten en un segundo.
+                  </p>
+                  <p>
+                    Jaramillo, A. M. J. (2007). Acústica: la ciencia del sonido. Itm.
+                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+                3.- Sonido 
+              </button>
+            </h2>
+            <div id="collapsethree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  Sonido 
+                </h3>
+                <p class="card-text mb-3"> 
+                  
+                  <p>
+                    El concepto de sonido se interpreta de dos maneras. Los fisiólogos lo describen como las sensaciones auditivas causadas por perturbaciones longitudinales en el aire. Según ellos, el sonido no existe en un planeta lejano. Sin embargo, los físicos se refieren a las propias perturbaciones.
+                  </p>
+                  <p>
+                    El sonido es una onda mecánica longitudinal que se difunde a través de un medio elástico.
+                  </p>
+                  <p>
+                    Para que se genere el sonido, se requieren dos elementos: una fuente de vibración mecánica y un medio elástico para propagar la perturbación. La fuente puede ser un diapasón, una cuerda vibrante o una columna de aire vibrando en un tubo de órgano. Los sonidos son producidos por materia en vibración. La necesidad de un medio elástico se puede demostrar colocando un timbre eléctrico dentro de un frasco conectado a una bomba de vacío. Cuando el timbre se conecta a una batería para que suene de manera continua, se extrae aire del frasco lentamente. A medida que el aire sale del frasco, el sonido del timbre se debilita hasta que finalmente deja de escucharse. Cuando se permite que el aire vuelva a entrar en el frasco, el timbre vuelve a sonar. Por lo tanto, el aire es necesario para transmitir el sonido.
+                  </p>
+                  <p>
+                    Cualquiera que haya observado a cierta distancia cómo se dispara un proyectil ha visto el destello del arma antes de escuchar la detonación. Algo similar ocurre al ver el relámpago de un rayo antes de escuchar el trueno. Aunque tanto la luz como el sonido viajan a velocidades finitas, la velocidad de la luz es tan grande en comparación con la del sonido que puede considerarse instantánea. La velocidad del sonido puede medirse directamente determinando el tiempo que les toma a las ondas moverse a través de una distancia conocida. En el aire, a 0° C, el sonido viaja a una velocidad de 331 m/s (1087 ft/s).
+                  </p>
+                  <p>
+                    Para las ondas sonoras longitudinales en un alambre o varilla, la velocidad de la onda está dada por v=√y/p donde Y es el módulo de Young para el sólido y r es su densidad. Esta relación es válida solo para varillas cuyos diámetros son pequeños en comparación con las longitudes de las ondas sonoras longitudinales que se propagan por ellas.
+                  </p>
+                  <p>
+                    Tippens, P. E. (2011). Física, conceptos y aplicaciones (7.ª ed., p. 441). México: MC GRAW HILL. México: MC GRAW HILL.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                4.-  Movimiento ondulatorio
+              </button>
+            </h2>
+            <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  Movimiento ondulatorio
+                </h3>
+                <p class="card-text mb-3"> 
+                  <p>
+                   La mayoría de nosotros, en nuestra infancia, hemos experimentado con ondas al arrojar una piedra en un estanque. Las ondas se forman en el punto de impacto de la piedra con el agua y se expanden en círculos hasta que llegan a la orilla. Un objeto flotante en el agua perturbada se mueve en todas direcciones alrededor de su posición original, pero no se desplaza hacia el punto de impacto de la piedra. A pesar de la propagación de la onda, el agua no se desplaza con ella.
+                  </p>
+                  <p>
+                    Existen principalmente dos tipos de ondas en nuestro mundo: las ondas mecánicas y las ondas electromagnéticas. Las ondas mecánicas causan perturbaciones en algún medio físico, como el agua en el ejemplo de la piedra. Por otro lado, las ondas electromagnéticas, que incluyen la luz visible, las ondas de radio, las señales de televisión y los rayos X, que no requieren un medio para su propagación. Un objeto flotante en el agua se mueve debido a la energía transferida desde el punto de impacto de la piedra, lo que demuestra que las ondas transfieren energía a través de una distancia, pero no materia.
+                  </p>
+                  <p>
+                    Serway, R. A. (2008). FÍSICA para ciencias e ingeniería Volumen 1 (7.ª ed., p. 449). México: Cengage learning. México: Cengage learning.
+                  </p>
+
+                </p>  
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                5.-Energía movimiento ondulatorio 
+              </button>
+            </h2>
+            <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  Energía movimiento ondulatorio
+                </h3>
+                <p class="card-text mb-3"> 
+                  <p>
+                    La energía E transmitida por una onda es directamente proporcional al cuadrado de la frecuencia f y al cuadrado de la amplitud A 
+                  </p>
+                  <p>
+                    Según la formula 
+                  </p>
+                  <p>
+                    E = cte ⋅ f^2 ⋅ A^2
+                  </p>
+                  <p>
+                    Barco Ríos, H. (1996). Física general para estudiantes de ingeniería: oscilaciones, movimiento ondulatorio, termología, electricidad. Departamento de Física y Química.
+                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                6.- El movimiento armónico simple (MAS)
+              </button>
+            </h2>
+            <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  El movimiento armónico simple (MAS)
+                </h3>
+                <p class="card-text mb-3">
+                  <p>
+                    El desplazamiento máximo a partir de la posición de equilibrio x = ±A se llama amplitud. En este punto, el disco siente la máxima fuerza dirigida hacia el centro de oscilación. A medida que el disco se acerca al centro de oscilación, la fuerza disminuye y se anula al llegar al centro. El impulso del disco lo lleva más allá del centro, pero luego la fuerza invierte esta dirección, reduciendo el movimiento hasta que el disco alcanza su amplitud en la dirección opuesta y la oscilación prosigue. En ausencia de fricción, este movimiento persistiría indefinidamente. Este tipo de movimiento oscilatorio sin fricción se conoce como movimiento armónico simple (MAS).
+                  </p>
+                  <p>
+                    El movimiento armónico simple (MAS) es un movimiento periódico que sucede cuando no hay fricción y es generado por una fuerza de restitución que es directamente proporcional al desplazamiento y tiene dirección.
+                  </p>
+                  <p>
+                    Tippens, P. E. (2011). Física, conceptos y aplicaciones (7.ª ed., p. 279). México: MC GRAW HILL. México: MC GRAW HILL.
+                  </p>
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                7.- Movimiento periódico 
+              </button>
+            </h2>
+            <div id="collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  Movimiento periódico
+                </h3>
+                <p class="card-text mb-3"> 
+                  <p>
+                    Siempre que se deforma un objeto, surge en él una fuerza elástica de restitución que es proporcional a la deformación. Cuando la fuerza cesa, el objeto oscila de un lado a otro con respecto a su posición de equilibrio. Un ejemplo de esto es cuando un clavadista salta de un trampolín, el trampolín sigue oscilando arriba y abajo de su posición normal durante un tiempo.
+                  </p>
+                  <p>
+                    Este tipo de movimiento se conoce como periódico porque la posición y la velocidad de las partículas en movimiento se repiten con el tiempo. Dado que la fuerza de restitución disminuye después de cada oscilación, el trampolín eventualmente volverá a su estado de reposo.
+                  </p>
+                  <p>
+                    El movimiento periódico se refiere a cuando un cuerpo se mueve de un lado a otro, a lo largo de una trayectoria fija, y vuelve a cada posición y velocidad después de un intervalo de tiempo predefinido.
+                  </p>
+                  <p>
+                    Tippens, P. E. (2011). Física, conceptos y aplicaciones (7.ª ed., p. 280). México: MC GRAW HILL. México: MC GRAW HILL.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                8.- cuerpo elástico
+              </button>
+            </h2>
+            <div id="collapseeight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  cuerpo elástico
+                </h3>
+                <p class="card-text mb-3"> 
+                  <p>
+                    Un cuerpo elástico se define como aquel que recupera su tamaño y forma originales una vez que la fuerza que lo deforma deja de actuar sobre él. Ejemplos comunes de cuerpos elásticos incluyen bandas de goma, pelotas de golf, trampolines, camas elásticas, pelotas de fútbol y resortes. Por otro lado, la plastilina, la pasta y la arcilla son ejemplos de cuerpos inelásticos. Es útil establecer relaciones de causa y efecto entre la deformación y las fuerzas que deforman para todos los cuerpos elásticos.
+                  </p>
+                  <p>
+                    Tippens, P. E. (2011). Física, conceptos y aplicaciones (7.ª ed., p. 266). México: MC GRAW HILL. México: MC GRAW HILL
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+                9.- Ley de Hooke 
+              </button>
+            </h2>
+            <div id="collapsenine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  Ley de Hooke
+                </h3>
+                <p class="card-text mb-3"> 
+                  <p>
+                    Según la ley de Hooke, un cuerpo elástico se deforma o se alarga en una cantidad s cuando se le aplica una fuerza F. La constante de proporcionalidad k es la constante de elasticidad:
+                  </p>
+                  <p>
+                    F= ks k=F/s
+                  </p>
+                  <p>
+                    La constante de proporcionalidad k varía mucho de acuerdo con el tipo de material y recibe el nombre de constante elástica.
+                  </p>
+                  <p>
+                    La ley de Hooke no se limita al caso de los resortes en espiral; de hecho, se aplica a la deformación de todos los cuerpos elásticos. 
+                  </p>
+                  <p>
+                    La ley de Hooke establece:
+                  </p> 
+                  <p>
+                    Siempre que no se exceda el límite elástico, una deformación elástica es directamente proporcional a la magnitud de la fuerza aplicada por unidad de área (esfuerzo).
+                  </p>
+                  <p>
+                    Si llamamos a la constante de proporcionalidad el módulo de elasticidad, podemos escribir la ley de Hooke en su forma más general: 
+                  </p>
+                  <p>
+                    Módulo de elasticidad = esfuerzo/ deformación
+                  </p>
+                  <p>
+                    Tippens, P. E. (2011). Física, conceptos y aplicaciones (7.ª ed., p. 280). México: MC GRAW HILL. México: MC GRAW HILL.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
+                10.- Esfuerzo
+              </button>
+            </h2>
+            <div id="collapseten" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  Esfuerzo
+                </h3>
+                <p class="card-text mb-3"> 
+                  <p>
+                    Se presentan tres tipos habituales de esfuerzos y sus deformaciones correspondientes. Un esfuerzo de tensión ocurre cuando fuerzas iguales y opuestas se alejan entre sí. En un esfuerzo de compresión, las fuerzas son iguales y opuestas y se acercan entre sí. Un esfuerzo cortante sucede cuando fuerzas iguales y opuestas no comparten la misma línea de acción. La eficacia de cualquier fuerza que genera un esfuerzo depende en gran medida del área sobre la que se aplica la fuerza. Por esta razón, una definición más completa de esfuerzo podría ser la siguiente: es la relación entre una fuerza aplicada y el área sobre la que actúa, por ejemplo, newtons por metro cuadrado o libras por pie cuadrado. El esfuerzo se refiere a la causa de una deformación elástica
+                  </p>
+                  <p>
+                    Tippens, P. E. (2011). Física, conceptos y aplicaciones (7.ª ed., p. 280). México: MC GRAW HILL. México: MC GRAW HILL.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeleven" aria-expanded="false" aria-controls="collapseeleven">
+                11.- Deformación
+              </button>
+            </h2>
+            <div id="collapseeleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  Deformación
+                </h3>
+                <p class="card-text mb-3"> 
+                  <p>
+                    La deformación es el cambio relativo en las dimensiones o en la forma de un cuerpo como resultado de la aplicación de un esfuerzo. la deformación se refiere a su efecto, en otras palabras, a la alteración de la forma en sí misma. la deformación puede considerarse como un cambio en la longitud por unidad de longitud.
+                  </p>
+                  <p>
+                    Tippens, P. E. (2011). Física, conceptos y aplicaciones (7.ª ed., p. 280). México: MC GRAW HILL. México: MC GRAW HILL.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwelve" aria-expanded="false" aria-controls="collapsetwelve">
+                12.- Ondas electromagnéticas
+              </button>
+            </h2>
+            <div id="collapsetwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  Ondas electromagnéticas
+                </h3>
+                <p class="card-text mb-3">
+                  <p>
+                    Las ondas electromagnéticas son generadas por las oscilaciones de un campo eléctrico y un campo magnético, y tienen la capacidad de propagarse en el vacío. No necesitan un medio para su propagación. Ejemplos de estas ondas incluyen los rayos gamma, los rayos X, las ondas de luz, los rayos infrarrojos, las ondas de radio y las ondas de radar.
+                  </p>
+                  <p>
+                    La radiación térmica es el resultado de las ondas electromagnéticas emitidas o absorbidas por un sólido, líquido o gas debido a su temperatura. La energía radiante emitida por un objeto, antes de que se haga visible, consiste en ondas electromagnéticas con longitudes de onda más largas que la luz roja. Estas ondas se conocen como rayos infrarrojos, que significa “por debajo del rojo”. Si la temperatura de la barra aumenta hasta aproximadamente 1500°C, se vuelve blanco rojizo, lo que indica una expansión aún mayor de la energía radiante en la región visible. Todas las sustancias emiten ondas electromagnéticas cuando se calientan. Dado que cada elemento es diferente, se puede esperar que la radiación emitida proporcione pistas sobre la estructura atómica. Estas ondas electromagnéticas se analizan mediante un espectrómetro, que utiliza un prisma o una rejilla de difracción para organizar la radiación en un patrón conocido como espectro.
+                  </p>
+                  <p>
+                    Tippens, P. E. (2011). Física, conceptos y aplicaciones (7.ª ed., p. 280). México: MC GRAW HILL. México: MC GRAW HILL.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirten" aria-expanded="false" aria-controls="collapsethirten">
+                13.- Dispositivos iniciales y luz de fibras ópticas 
+              </button>
+            </h2>
+            <div id="collapsethirten" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3 class="card-title">
+                  Dispositivos iniciales y luz de fibras ópticas 
+                </h3>
+                <p class="card-text mb-3"> 
+                  <p>
+                    La frecuencia de las ondas sonoras transmitidas en el aire que rodea al resorte es idéntica a la frecuencia del resorte vibratorio. Por lo que las frecuencias posibles, o armónicas, de las ondas sonoras producidas por un resorte vibratorio están dadas por:
+                  </p>
+                  <img src="img/tfism.png" class="img-center">
+                  <p>
+                    donde v es la velocidad de las ondas transversales en el resorte.
+                  </p>
+                  <p>
+                    El sonido también puede generarse a través de las vibraciones longitudinales de una columna de aire en un tubo. Este tubo puede estar abierto en ambos extremos (tubo abierto) o cerrado en un extremo (tubo cerrado). Cuando se produce una onda de compresión en el tubo, el desplazamiento de las partículas de aire en el extremo cerrado debe ser cero, lo que significa que el extremo cerrado de un tubo debe ser un nodo de desplazamiento.
+                  </p>
+                  <p>
+                    Por otro lado, el aire en el extremo abierto de un tubo tiene la mayor libertad de movimiento, lo que significa que el desplazamiento es máximo en el extremo abierto. Por lo tanto, el extremo abierto de un tubo debe ser un antinodo de desplazamiento.
+                  </p>
+                  <p>
+                    Todos los armónicos son posibles para una columna de aire que vibra en un tubo abierto. Los tubos abiertos de diferentes longitudes se utilizan en una gran cantidad de instrumentos musicales, como órganos, flautas y trompetas. Estos instrumentos aprovechan las propiedades de las ondas sonoras y las columnas de aire para producir sonidos de diferentes tonos y volúmenes.
+                  </p>
+                  <img src="img/tfism1.png" class="img-center">
+                  <p>
+                    Tippens, P. E. (2011). Física, conceptos y aplicaciones (7.ª ed., p. 280). México: MC GRAW HILL. México: MC GRAW HILL.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+        </section>
+
+ <!------------------------------------------------------------>
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+          <div class="box">
+                  <h2>#Fisica para Ingenieria</h2>
+          </div>
+          <div class="box">
+            <h2>Creado por: </h2>
+            <p>-Jose Angel Martinez Cabrera-Axel Gabriel Ramirez Ortiz-Estrella Aguillon Torrijos-Alan Ivan Morales Flores-Samuel Veytía López-</p>
+          </div>
+      </div>
+      <div class="grupo-2">
+          <small>&copy; 2024 <b>Universidad Politécnica de Querétaro</b> - Todos los Derechos Reservados.</small>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
